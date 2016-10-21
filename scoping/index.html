@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Scoping - NCSU Web Archiving</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+        <link href="../extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">NCSU Web Archiving</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Archive-It Admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../admin/">Admin Interface</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../support/">Support Center</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Seed Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../seeds/">Selection and Addition</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../test-crawls/">Test Crawls</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Scoping</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../maintenance/">Maintenance</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../metadata/">Metadata</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quality Assurance <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../new-seed-qa/">New Seed QA</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../recurring-crawl-qa/">Recurring Crawl QA</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../searching/">Using Our Web Archives</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../resources/">Other Resources</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../test-crawls/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../maintenance/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#seed-scoping">Seed Scoping</a></li>
+        
+            <li><a href="#seed-type">Seed Type</a></li>
+        
+            <li><a href="#scoping-rules">Scoping Rules</a></li>
+        
+            <li><a href="#collection-level-scoping-rules">Collection Level Scoping Rules</a></li>
+        
+            <li><a href="#seed-level-scoping-rules">Seed Level Scoping Rules</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h2 id="seed-scoping">Seed Scoping</h2>
+<p>Seed scoping is the process of setting parameters that determine how much or how little of a site the Archive-It crawler reaches. This process is used to ensure that you are collecting all of the pages you want to collect, and avoiding those which you do not wish to become part of the collection. Seed scoping is handled through a variety of tools within Archive-It. Seed scoping is perhaps the most important element in web archiving. Proper scoping allows you to be very selective with the web content that you wish to add to your archive. It also assists you in reducing duplication and preserving your data budget.</p>
+<h3 id="seed-type">Seed Type</h3>
+<p>Properly setting the <a href="https://support.archive-it.org/hc/en-us/articles/208332843-Assign-and-edit-a-seed-type-">seed type</a> is the first step in seed scoping. There are a variety of seed types available</p>
+<ul>
+<li>
+<p><strong>Standard</strong>: This follows the '<a href="https://support.archive-it.org/hc/en-us/articles/208001076-How-our-crawler-determines-scope">default seed scoping</a>' and should be used for most sites. It will follow links within the site  and capture embedded content within the site. If scoped properly it will not capture content outside of the seed site.</p>
+</li>
+<li>
+<p><strong>Standard+</strong>: This will capture everything that would be captured in the standard crawl, plus external links.</p>
+</li>
+<li>
+<p><strong>One Page</strong>: This will only capture the first page of your seed. This scope setting is great for capturing one page articles, like those included in the <a href="https://archive-it.org/collections/7087">James B. Hunt Jr. Library Impact Collection</a>.</p>
+</li>
+<li>
+<p><strong>One Page+</strong>: This will capture the first page of your seed, as well as the first page of any URLs that are linked off of that seed.</p>
+</li>
+</ul>
+<h3 id="scoping-rules">Scoping Rules</h3>
+<p>There are a variety of scoping rules available that allow you to either expand or contract the scope of your crawl. Below you will find a brief description of each. There is also thorough documentation about crawl scope on the Archive-It support pages.</p>
+<ul>
+<li>
+<p><a href="https://support.archive-it.org/hc/en-us/articles/208332933-Limit-your-crawl#Howtolimityourcrawl-Howtoblockthecrawlerfromarchivingspecifichosts">Block Hosts</a> - A host is a URL that is crawled as part of your seed URL in order to deliver embedded content. If you find that one particular host is problematic, you can block it by adding a 'block hosts' scoping rule for that particluar host.</p>
+</li>
+<li>
+<p><a href="https://support.archive-it.org/hc/en-us/articles/208332933-Limit-your-crawl#Howtolimityourcrawl-Howtolimitanentirecrawlbydurationanddata">Add Data Limits</a> - Certain seed URLs may be quite data heavy particularly if they involve a large number of videos or images. If you wish to limit the amount of data collected for any seed you can set a data limit. Data limits are a good way to ensure that recurring crawls don't exceed a certain size.</p>
+</li>
+<li>
+<p><a href="https://support.archive-it.org/hc/en-us/articles/208001096-Avoid-robots-exclusions#Howtoavoidrobotsexclusions-Howtoignorerobots.txtfiles">Ignore Robots.txt</a> - The robots.txt file that is embedded in many websites is a technical file that outlines which, if any, robots are allowed to crawl that site. If it excludes all robots then the Archive-It crawler will not be able to crawl the website. The best practice is to contact the site owner and have them <a href="https://support.archive-it.org/hc/en-us/articles/208001096-Avoid-robots-exclusions#Howtoavoidrobotsexclusions-Howtoremovearobotsexclusion">add an exclusion for the Archive-It crawler</a>. However, in some cases such as when crawling content that is owned by your institution, you may wish to add an exclude robots.txt scoping rule to ensure all content is crawled.</p>
+</li>
+<li>
+<p><a href="https://support.archive-it.org/hc/en-us/articles/208332933-Limit-your-crawl#Howtolimityourcrawl-HowtoblockspecificURLsfromarchiving"> Block URL if...</a> - You may wish to block certain URLs from your crawl based on a portion of the URL rather than having to set up a large number of specific hosts to block. This comes in handy when URLs that should be out of scope either all contain the same text, or can be matched using some sort of regular expression. The use of these two tools can be powerful in allowing you to avoid crawler traps, or crawling unwanted content.</p>
+<ul>
+<li>
+<p><a href="https://support.archive-it.org/hc/en-us/articles/208332933-Limit-your-crawl#Howtolimityourcrawl-HowtoblockspecificURLsfromarchiving">Contains the Text</a> - If each URL you wish to block contains a specific string of text that does not appear in the URLs you wish to crawl, you can enter that here to block every URL containing that string of text. For example, if you wish to block every URL for the ncsu.edu seed that contains the string 'ncsu.edu/private/' you could add /private/ to the field.</p>
+</li>
+<li>
+<p><a href="https://support.archive-it.org/hc/en-us/articles/208332963-How-to-modify-your-crawl-scope-with-a-Regular-Expression">Matches the Regular Expression</a> - A <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a> is a way to look for common patterns in the url and block based on pattern matches, instead of straight text maches. For example you might have a url patter that is url.com/09-09.html and url.com/10-10.html both of which you want to block. Rather than having to enter a 'contains the text' rule for every single match you can use a regular expression to find all of the matches. A common use of 'Block URL if it Matches the Regular Expression' regular scoping rule is to help the crawler avoid crawler traps. A common crawler trap is a calendar on a website in which every date on the calendar is a URL. To the crawler each link looks valid, even though the calendar is dynamically generating a never ending set of URLs. View more about the use of regular expressions in Archive-It by viewing this <a href="https://support.archive-it.org/hc/en-us/articles/208332963-How-to-modify-your-crawl-scope-with-a-Regular-Expression">support document</a>. </p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://support.archive-it.org/hc/en-us/articles/208001106-Expand-the-scope-of-your-crawl">Expand Scope if...</a>
+This string is similar to the Block URL If... setting, but is used to the opposite effect. If there is a string of text common to URLs that you wish to crawl, you can add that here either as a string or as a regular expression.</p>
+</li>
+</ul>
+<h3 id="collection-level-scoping-rules">Collection Level Scoping Rules</h3>
+<p>Collection level scoping rules can be set from the Crawl Scope tab on the landing page of any collection. Collection level scoping rules apply to each seed in that collection. Collection level scoping rules are best utilized for content that may be consistent across seeds in your collection that you are sure you want to capture. This level of scoping can be useful to ensure you set the <a href="https://support.archive-it.org/hc/en-us/articles/208333753-Archiving-YouTube-videos">proper scoping rules</a> to capture all YouTube videos for each seed in the collection.</p>
+<h3 id="seed-level-scoping-rules">Seed Level Scoping Rules</h3>
+<p>More often than not, you will be setting seed level scoping rules rather than collection level scoping rules. These rules are set by opening up the settings pane for any seed in your collection, and clicking on Seed Scope. You use the same scope contraction and expansion rules as outlined above. However, rather than those rules being applied to every seed within your collection, they are applied to individual seeds.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

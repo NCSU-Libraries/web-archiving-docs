@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Selection and Addition - NCSU Web Archiving</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+        <link href="../extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">NCSU Web Archiving</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Archive-It Admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../admin/">Admin Interface</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../support/">Support Center</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Seed Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li class="active">
+    <a href="./">Selection and Addition</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../test-crawls/">Test Crawls</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../scoping/">Scoping</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../maintenance/">Maintenance</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../metadata/">Metadata</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quality Assurance <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../new-seed-qa/">New Seed QA</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../recurring-crawl-qa/">Recurring Crawl QA</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../searching/">Using Our Web Archives</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../resources/">Other Resources</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../support/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../test-crawls/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#seed-management">Seed Management</a></li>
+        
+            <li><a href="#seed-management-workflow">Seed Management Workflow</a></li>
+        
+            <li><a href="#seed-selection">Seed Selection</a></li>
+        
+            <li><a href="#adding-new-seeds-to-a-collection">Adding New Seeds to a Collection</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="seed-management">Seed Management</h1>
+<p>Perhaps the most important part of maintaining our web archive is seed management. Seed management is the act of selecting, scoping, scheduling, crawling and maintaining all of the seeds in our collections. While it is not intended to be an exhaustive list of subjects related to seed management, this page should guide you through the process of selecting a seed and prepping it for regular scheduled crawls and ongoing maintenance.</p>
+<h2 id="seed-management-workflow">Seed Management Workflow</h2>
+<p><img alt="Seed Management Workflow" src="../img/seed-selection.png" /></p>
+<h2 id="seed-selection">Seed Selection</h2>
+<p>Seed selection is an ongoing process for all of our collections. Generally seeds are selected by curators. Suggested seeds are then added to our <a href="https://docs.google.com/spreadsheets/d/1axqHiFjPW7nOCgAxgZjkIzzA76JM9nzbI4nQ3HUaqHw/edit#gid=1855863656">Up To Date Web Archiving Seeds Google Sheet</a> (login required). This sheet allows us to track all seeds from one central location, and to track the seeds that have been proposed from various curators and library staff. Once a proposed seed is selected for archiving the process of seed scoping begins.</p>
+<h2 id="adding-new-seeds-to-a-collection">Adding New Seeds to a Collection</h2>
+<p>After a new seed has been selected, it is time to add that seed to a collection in Archive-It. In order to add a seed to a collection you need to:</p>
+<p>1) Open the Collection from the <a href="https://five.partner.archive-it.org/972">Archive-It homepage</a></p>
+<p>2) Click on the Seeds tab</p>
+<p>3) Click Add Seeds</p>
+<p>4) Paste the full URL of the seed you wish to add (e.g. https://www.ncsu.edu/)</p>
+<p>5) Set visibility to private</p>
+<p>6) Keep frequency as one time crawl (this ensures it does not accidentally end up in a recurring crawl before scoping is complete)</p>
+<p>7) Select <a href="https://support.archive-it.org/hc/en-us/articles/208332843-Assign-and-edit-a-seed-type-">seed type</a></p>
+<p>8) Click Add Seeds</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
