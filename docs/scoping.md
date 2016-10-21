@@ -1,0 +1,36 @@
+## Seed Scoping
+Seed scoping is the process of setting parameters that determine how much or how little of a site the Archive-It crawler reaches. This process is used to ensure that you are collecting all of the pages you want to collect, and avoiding those which you do not wish to become part of the collection. Seed scoping is handled through a variety of tools within Archive-It. Seed scoping is perhaps the most important element in web archiving. Proper scoping allows you to be very selective with the web content that you wish to add to your archive. It also assists you in reducing duplication and preserving your data budget.
+
+### Seed Type
+Properly setting the [seed type](https://support.archive-it.org/hc/en-us/articles/208332843-Assign-and-edit-a-seed-type-) is the first step in seed scoping. There are a variety of seed types available
+
+- **Standard**: This follows the '[default seed scoping](https://support.archive-it.org/hc/en-us/articles/208001076-How-our-crawler-determines-scope)' and should be used for most sites. It will follow links within the site  and capture embedded content within the site. If scoped properly it will not capture content outside of the seed site.
+
+- **Standard+**: This will capture everything that would be captured in the standard crawl, plus external links.
+
+- **One Page**: This will only capture the first page of your seed. This scope setting is great for capturing one page articles, like those included in the [James B. Hunt Jr. Library Impact Collection](https://archive-it.org/collections/7087).
+
+- **One Page+**: This will capture the first page of your seed, as well as the first page of any URLs that are linked off of that seed.
+
+### Scoping Rules
+There are a variety of scoping rules available that allow you to either expand or contract the scope of your crawl. Below you will find a brief description of each. There is also thorough documentation about crawl scope on the Archive-It support pages.
+
+- [Block Hosts](https://support.archive-it.org/hc/en-us/articles/208332933-Limit-your-crawl#Howtolimityourcrawl-Howtoblockthecrawlerfromarchivingspecifichosts) - A host is a URL that is crawled as part of your seed URL in order to deliver embedded content. If you find that one particular host is problematic, you can block it by adding a 'block hosts' scoping rule for that particluar host.
+
+- [Add Data Limits](https://support.archive-it.org/hc/en-us/articles/208332933-Limit-your-crawl#Howtolimityourcrawl-Howtolimitanentirecrawlbydurationanddata) - Certain seed URLs may be quite data heavy particularly if they involve a large number of videos or images. If you wish to limit the amount of data collected for any seed you can set a data limit. Data limits are a good way to ensure that recurring crawls don't exceed a certain size.
+
+- [Ignore Robots.txt](https://support.archive-it.org/hc/en-us/articles/208001096-Avoid-robots-exclusions#Howtoavoidrobotsexclusions-Howtoignorerobots.txtfiles) - The robots.txt file that is embedded in many websites is a technical file that outlines which, if any, robots are allowed to crawl that site. If it excludes all robots then the Archive-It crawler will not be able to crawl the website. The best practice is to contact the site owner and have them [add an exclusion for the Archive-It crawler](https://support.archive-it.org/hc/en-us/articles/208001096-Avoid-robots-exclusions#Howtoavoidrobotsexclusions-Howtoremovearobotsexclusion). However, in some cases such as when crawling content that is owned by your institution, you may wish to add an exclude robots.txt scoping rule to ensure all content is crawled.
+
+- [ Block URL if...](https://support.archive-it.org/hc/en-us/articles/208332933-Limit-your-crawl#Howtolimityourcrawl-HowtoblockspecificURLsfromarchiving) - You may wish to block certain URLs from your crawl based on a portion of the URL rather than having to set up a large number of specific hosts to block. This comes in handy when URLs that should be out of scope either all contain the same text, or can be matched using some sort of regular expression. The use of these two tools can be powerful in allowing you to avoid crawler traps, or crawling unwanted content.
+    - [Contains the Text](https://support.archive-it.org/hc/en-us/articles/208332933-Limit-your-crawl#Howtolimityourcrawl-HowtoblockspecificURLsfromarchiving) - If each URL you wish to block contains a specific string of text that does not appear in the URLs you wish to crawl, you can enter that here to block every URL containing that string of text. For example, if you wish to block every URL for the ncsu.edu seed that contains the string 'ncsu.edu/private/' you could add /private/ to the field.
+
+    - [Matches the Regular Expression](https://support.archive-it.org/hc/en-us/articles/208332963-How-to-modify-your-crawl-scope-with-a-Regular-Expression) - A [regular expression](https://en.wikipedia.org/wiki/Regular_expression) is a way to look for common patterns in the url and block based on pattern matches, instead of straight text maches. For example you might have a url patter that is url.com/09-09.html and url.com/10-10.html both of which you want to block. Rather than having to enter a 'contains the text' rule for every single match you can use a regular expression to find all of the matches. A common use of 'Block URL if it Matches the Regular Expression' regular scoping rule is to help the crawler avoid crawler traps. A common crawler trap is a calendar on a website in which every date on the calendar is a URL. To the crawler each link looks valid, even though the calendar is dynamically generating a never ending set of URLs. View more about the use of regular expressions in Archive-It by viewing this [support document](https://support.archive-it.org/hc/en-us/articles/208332963-How-to-modify-your-crawl-scope-with-a-Regular-Expression). 
+
+- [Expand Scope if...](https://support.archive-it.org/hc/en-us/articles/208001106-Expand-the-scope-of-your-crawl)
+This string is similar to the Block URL If... setting, but is used to the opposite effect. If there is a string of text common to URLs that you wish to crawl, you can add that here either as a string or as a regular expression.
+
+### Collection Level Scoping Rules
+Collection level scoping rules can be set from the Crawl Scope tab on the landing page of any collection. Collection level scoping rules apply to each seed in that collection. Collection level scoping rules are best utilized for content that may be consistent across seeds in your collection that you are sure you want to capture. This level of scoping can be useful to ensure you set the [proper scoping rules](https://support.archive-it.org/hc/en-us/articles/208333753-Archiving-YouTube-videos) to capture all YouTube videos for each seed in the collection.
+
+### Seed Level Scoping Rules
+More often than not, you will be setting seed level scoping rules rather than collection level scoping rules. These rules are set by opening up the settings pane for any seed in your collection, and clicking on Seed Scope. You use the same scope contraction and expansion rules as outlined above. However, rather than those rules being applied to every seed within your collection, they are applied to individual seeds.
