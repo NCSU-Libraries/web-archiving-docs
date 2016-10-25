@@ -8,7 +8,7 @@ It is important to maintain ongoing visual inspections of our archived seeds to 
 Due to the large number of seeds in our collection, we have to rely on quantitative data to better understand the efficacy of our crawls. Using the amount of data collected on any given crawl, and comparing it to other recurring crawl reports allows us to identify any outliers which may indicate an issue. For example if the monthly crawl generally returns about 6GB of data and then in one month jumps to 10GB there may be an issue, and you will need to closely inspect the crawl report.
 
 ### Data Budget Management
-We have a set data quota per year that we must remain within. This is why maintaining an active awareness of our current data budget, and the average data usage for recurring crawls is helpful. We have created [this Google Spreadsheet](insert link here) to help us track our data usage throughout the year.
+We have a set data quota per year that we must remain within. This is why maintaining an active awareness of our current data budget, and the average data usage for recurring crawls is helpful. We have created [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/126EbXKlCVFKFWxf8rb6wjbqCKzDGBB1FuW8sA-nspZg/edit#gid=183371544) to help us track our data usage throughout the year.
 
 
 ### Major Website Changes
