@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>None/admin/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/support/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,31 +29,31 @@
         
     <url>
      <loc>None/seeds/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/test-crawls/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/scoping/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/maintenance/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/metadata/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -63,13 +63,13 @@
         
     <url>
      <loc>None/new-seed-qa/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/recurring-crawl-qa/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -78,7 +78,7 @@
     
     <url>
      <loc>None/searching/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -86,7 +86,7 @@
     
     <url>
      <loc>None/resources/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
